@@ -16,7 +16,7 @@ public class List extends JPanel{
 	
 	//constructor
 	List(){
-		GridLayout layout = new GridLayout(10,1);
+		GridLayout layout = new GridLayout(10,1);	//10 rows, 1 column
 		layout.setVgap(5);
 		
 		this.setLayout(layout);
@@ -39,13 +39,13 @@ public class List extends JPanel{
 //			}
 //		}
 		
-	}//removed since i'm using checkboxes
+	}
 	
 	public void clearCompletedTasks() {
 		
 		//1. make/get an array of components/tasks using getComponents
 		//2. then loop through the array and clear the tasks which are marked checked=true
-		for(Component abc : getComponents())	
+		for(Component abc : getComponents())	//WHAAT???
 		{
 			if(abc instanceof Task) {	
 				if(((Task)abc).getState()) {

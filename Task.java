@@ -23,7 +23,7 @@ public class Task extends JPanel {
 	//private JButton done;
 	private JButton delete;
 	
-	private boolean checked;	//do we need this even if we use checkbox instead of done button?? yeah, if you want the task background to turn green when checked
+	private boolean checked;	//do we need this even if we use checkbox instead of button??
 	
 	
 	
@@ -50,8 +50,9 @@ public class Task extends JPanel {
 		this.add(done, BorderLayout.WEST);
 		 		
 		taskName = new JTextField("Your task here");
-		//taskName.setPreferredSize(new Dimension(300,20));		//can't do this, the layout manager decides the preferred size by itself
+		//taskName.setPreferredSize(new Dimension(300,20));		//can't do this, layout manager decides the preferred size by itself
 		taskName.setBorder(BorderFactory.createEmptyBorder());
+		//taskName.setHorizontalAlignment(JTextField.WEST);		//no need if we're not setting preferred size
 		this.add(taskName, BorderLayout.CENTER);	//CENTER uses as much as remaining available space
 		
 //		done = new JButton("done");
@@ -62,7 +63,7 @@ public class Task extends JPanel {
 	}
 	
 //	public JButton getDone() {
-//		return done;	//method type is JButton coz we'll be returning a JButton
+//		return done;	//method type is JButton coz we'll be return a JButton
 //	}
 //	
 //	//when tasks are added or cleared

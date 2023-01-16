@@ -13,7 +13,8 @@ public class TitleBar extends JPanel {
 	TitleBar() {
 		this.setPreferredSize(new Dimension(400, 80));
 		this.setBackground(Color.white);
-		// this.setBackground(Color.red); // to check size visibly, doesn't work if not 'added' to AppFrame
+		// Sthis.setBackground(Color.red); // doesn't work if not 'added' to AppFrame
+		// initially, just to check size visibly
 
 		JLabel titleText = new JLabel("To-Do List ^^");
 		titleText.setPreferredSize(new Dimension(400, 80));

@@ -1,5 +1,6 @@
 package classes;
 
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Font;
 
@@ -52,5 +53,6 @@ public class ButtonPanel extends JPanel{ //DO NOT FORGET to extend
 		//getter for clearDone
 		return clearDone;
 	}
+	
 	
 }
